@@ -1,0 +1,15 @@
+Course Topics
+R is a free computing and graphical software/environment for statistical analysis.
+
+Part 1 of this short course consists of 2 sections:
+
+Section 1 introduces R programming basics, including data objects, loops, and importing/exporting datasets, then these concepts are reinforced using examples of data manipulation/cleaning.
+Section 2 discusses the R graphics environment and the creation basic statistical plots as well as paper/presentation quality images.
+
+Course Topics
+R is a free computing and graphical software/environment for statistical analysis.
+
+Part 2 of this short course consists of 2 sections:
+
+Section 3 introduces statistical analysis in R, including t-tests, ANOVA, linear regression, nonparametric tests, and logistic regression.
+Section 4 contains advanced R programming concepts such as functions, data simulation, the statistical bootstrap, and scraping data from the web using FTP.

@@ -1,0 +1,48 @@
+#### R Tutorial for LISA Shortcourses ####
+##########################################
+
+##########################################
+#### ?: Premade Datasets and Packages ####
+##########################################
+
+##### Example 3.1.1: Premade Datasets ####
+##########################################
+
+# R actually comes with a number of "premade" datasets.
+
+# Let's check to see what all objects we have made thus far.
+
+ls()
+
+# Note, nothing called "cars" or "sleep" is there.
+# However watch this:
+
+cars
+sleep
+
+# These are just two of the premade datasets that comes with R.
+
+# Note you can call variables out of datasets using the dollar sign, $.
+
+cars$speed
+sleep$extra
+
+######### Example 3.2.1: Packages ########
+##########################################
+
+# Not all datasets come in the basic R download.
+# In fact, not all functions come in the basic R download.
+# People create their own all the time and submit them to R so you can download them.
+# Warning: The price of R being free, they take no responsibility for other people's errors.  So use at your own risk.
+
+# I want to make a 3d scatterplot, but I don't think base R has one, so let's search.
+
+help.search("3d scatterplot")
+
+# Go install the package scatterplot3d, see the powerpoint for a tutorial.
+
+# Now that we have installed it we need to call it.
+
+library(scatterplot3d)
+
+scatterplot3d( DATA[,1] ~ DATA[,2]*DATA[,3] )

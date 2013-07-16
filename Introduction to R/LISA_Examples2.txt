@@ -1,0 +1,155 @@
+#### R Tutorial for LISA Shortcourses ####
+##########################################
+
+##########################################
+## 2: Basic Regression / Basic Graphing ##
+##########################################
+
+########### Example 2.1.1: MLR ###########
+##########################################
+
+DATA<-read.table("C:/Nels/School files/Grad School/Spring 09/Consulting/Short Course/DATA.txt", header = T)
+
+
+
+# lm() fits a linear model, which a multiple linear regression is.
+
+?lm
+
+model<-lm(Y~X1+X2+X3+X4, data=DATA)
+
+# Now that we have fit the model, we want to analyze it.
+# summary() is a really nice function for telling us about things.  We use it to get display the output.
+
+?summary
+
+summary(model)
+
+# It is very important to check the assumptions of any statistical procedure you use, if possible.
+# For this we will need the rediduals and fitted values for this model.
+
+# resid() returns the residuals of a lm object.
+
+res<-resid(model)
+
+# fitted() returns the fitted values of a lm object
+
+pred<-fitted(model)
+
+# We will use these later to check the assumptions graphically.
+
+#### Example 2.1.2: MLR No Intercept #####
+##########################################
+
+# Notice how I have placed a -1 in the model, this tells R not to estimate the intercept.
+
+model.2<-lm(Y~X1+X2+X3+X4 -1 , data=DATA)
+
+summary(model.2)
+
+### Example 2.1.3: MLR w/ Interactions ###
+##########################################
+
+# R follows the "hierarchy principal," so it wants all lower order term in the model.
+# X1*X2 tells R, I want X1, X2, and X1:X2 (the interaction) in the model.
+
+model.3<-lm(Y~X1*X2*X3*X4, data=DATA)
+
+summary(model.3)
+
+# Note: I can remove interactions using similar code to the no intercept.
+
+model.4<-lm(Y~X1*X2*X3*X4 - X1:X2:X3:X4, data=DATA)
+
+summary(model.4)
+
+
+### Example 2.2.1: Check Independence ####
+##########################################
+
+# plot() is a very flexible plotting function.
+
+plot(DATA[,1])
+
+# When a numeric vector is the only argument entered the y-axis will be the values of the vector and 
+# the x-axis will be the index.
+
+# abline() adds a straight line to the last executed plot().
+
+abline(a=0,b=0)
+
+# a = 0 says the line should have intercept 0, b = 0 say the slope should be 0.
+
+
+# Example 2.2.2: Check Constant Variance #
+##########################################
+
+# Now let's add some labels to our graph.
+
+plot(pred,res, main="Title", xlab="Label for the x-axis", ylab="Label for the y-axis")
+abline(a=0,b=0)
+
+
+##### Example 2.2.3: Check Normality #####
+##########################################
+
+# hist() plots a histogram.
+# I also want it to be red.
+
+hist(res, col="Red")
+
+#### Example 2.2.4: Check Normality 2 ####
+##########################################
+
+# Let's not overwrite our graph this time. win.graph() makes a new blank window.
+
+win.graph()
+
+# qqnorm() returns a normal quantile plot.
+
+qqnorm(res, col=6)
+
+# qqline() adds the line of theoretical quantiles to the last qqplot() returned.
+
+qqline(res, col="Blue")
+
+# Example 2.2.5: Check Multicollinearity #
+##########################################
+
+# Specifying a large number of vectors produces a scatterplot matrix.
+
+plot(DATA[2:5],col="Red")
+
+# I encourage everyone to use ?plot, etc. to read more about these graphing functions.
+# R has very powerful graphing capabilities so put it to good use!
+
+# Example 2.2.6: Multiple Graphs at Once #
+##########################################
+
+# Sometimes we would like several graphs on the same image.
+# Let's put our checks of assumptions all in one image.
+# it will be arranged 2x2
+
+par(mfrow=c(2,2))
+
+plot(DATA[,1])
+abline(a=0,b=0)
+
+plot(pred,res, main="Title", xlab="Label for the x-axis", ylab="Label for the y-axis")
+abline(a=0,b=0)
+
+hist(res, col="Red")
+
+qqnorm(res, col=6)
+qqline(res, col="Blue")
+
+##### Example 2.3.1: A simple T-test #####
+##########################################
+
+# We are going to use X1 from the DATA dataset.
+
+DATA$X1
+
+# We want to test H0: mu = 19, Ha: mu >= 19, alpha = .01 
+# How do we do this?  You tell me!
+

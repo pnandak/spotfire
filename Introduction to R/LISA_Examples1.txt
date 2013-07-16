@@ -1,0 +1,134 @@
+#### R Tutorial for LISA Shortcourses ####
+##########################################
+
+##########################################
+# 1: Importating/Exporting/Managing Data #
+##########################################
+
+###### Example 1.1.1: Simple Import ######
+##########################################
+
+# First let's read the description of our first function in the help and documentation.
+?read.table
+
+# Always check to make sure what you are about to call what you assign hasn't already been taken.
+
+data # This one is taken.
+DATA # This one is not.
+
+# Now let's Import the data
+# Use this form: DATA<-read.table("C:/FOLDER NAME/DATANAME.txt", header = T)
+
+DATA<-read.table("C:/Nels/School files/Grad School/Spring 09/Consulting/Short Course/DATA.txt", header = T)
+
+# the <- arrow assigns what is on the right to a character string on the left, which is called an "object".
+# We can call the oject at anytime by simply typing what we have named it (DATA in this case).
+# Note: R is sensitive to capital letters.
+
+data
+
+## Example 1.1.2: Another Simple Import ##
+##########################################
+
+# First, let's find out what our working directory is.
+getwd()
+
+# Now let's change it to the folder we want to work out of.
+wd
+wd<-"C:/Nels/School files/Grad School/Spring 09/Consulting/Short Course/"
+setwd(wd)
+
+# Check to make sure the change was successful.
+getwd()
+
+# Import the data, this time comma delimited.
+DATA2
+DATA2<-read.csv("DATA.csv")
+DATA2
+
+# Setting your working directory to the folder with all your relavent files, etc. can make writing code a lot less anoying.
+
+## Example 1.2.1: Basic Data Structures ##
+##########################################
+
+
+# A combine, a kind of vector
+i<-c( 1, 0, 0, 1)
+d<-c( 2, 2, 3)
+dnames<-c("Row", "Comlumn", "Depth")
+
+# A matrix
+X<-matrix(i, nrow= 2, ncol = 2)
+X
+
+# A vector
+x<-matrix(0, nrow = 1, ncol = 2)
+
+# A sequence
+n<-seq( from = 1, to = 10, by= 1)
+
+# An array
+a<-array(0, dim= d, dimnames=dnames)
+
+# A list
+mylist<-list(X, x, i, d, n, a)
+mylist
+
+
+#### Example 1.2.2: Matrix Operations ####
+##########################################
+
+# Here we reclassify our data object as a matrix, so we can perform matrix operations on it.
+DATA<-data.matrix(DATA)
+
+# Matrix transpose
+t(DATA)
+
+# Matrix Product, %*%
+XTX<-t(DATA)%*%DATA
+
+# Matrix Inverse
+solve(XTX)
+
+# Suppose we only want to use a single column of a matrix, say the first column.
+DATA[,1]
+
+# Let's say we want to use rows four through eight.
+DATA[4:8,]
+
+# You can use similar notation to call objects from lists, mylist[2].
+# However be warned, objects in lists lose their properties.
+# using the function unlist() can alleviate this, however doesn't fix it.
+
+mylist[1]
+unlist(mylist[1])
+matrix(unlist(mylist[1]),2,2)
+
+###### Example 1.3.1: Simple Export ######
+##########################################
+
+# write.table() can be used to write .dat and .txt file, probably others too.
+
+?write.table
+
+write.table(DATA, file = "C:/Nels/School files/Grad School/Spring 09/Consulting/Short Course/DATA.dat")
+
+#### Example 1.3.2: Simple PDF Export ####
+##########################################
+
+# Suppose we have some graphs (more on graphs later)
+
+plot(DATA[,1])
+win.graph()		# win.graph() makes a new window for the next graph, instead of replacing the old one.
+hist(DATA[,1])
+
+
+# Let's Save them as a PDF file.
+
+pdf(file="C:/Nels/School files/Grad School/Spring 09/Consulting/Short Course/PDFex1.pdf")
+
+plot(DATA[,1])
+hist(DATA[,1])
+
+dev.off() # This end the PDF creation.
+

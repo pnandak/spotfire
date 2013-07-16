@@ -1,0 +1,99 @@
+AffyID	Symbol	Chromosome	Description
+205260_s_at	ACYP1	14	acylphosphatase 1, erythrocyte (common) type
+206833_s_at	ACYP2	2	acylphosphatase 2, muscle type
+207820_at	ADH1A	4	alcohol dehydrogenase 1A (class I), alpha polypeptide
+209612_s_at	ADH1B	4	alcohol dehydrogenase 1B (class I), beta polypeptide
+209613_s_at	ADH1B	4	alcohol dehydrogenase 1B (class I), beta polypeptide
+209614_at	ADH1B	4	alcohol dehydrogenase 1B (class I), beta polypeptide
+206262_at	ADH1C	4	alcohol dehydrogenase 1C (class I), gamma polypeptide
+208847_s_at	ADH5	4	alcohol dehydrogenase 5 (class III), chi polypeptide
+208848_at	ADH5	4	alcohol dehydrogenase 5 (class III), chi polypeptide
+207544_s_at	ADH6	4	alcohol dehydrogenase 6 (class V)
+214261_s_at	ADH6	4	alcohol dehydrogenase 6 (class V)
+210505_at	ADH7	4	alcohol dehydrogenase 7 (class IV), mu or sigma polypeptide
+201425_at	ALDH2	12	aldehyde dehydrogenase 2 family (mitochondrial)
+205623_at	ALDH3A1	17	aldehyde dehydrogenase 3 family, memberA1
+209645_s_at	ALDH1B1	9	aldehyde dehydrogenase 1 family, member B1
+209646_x_at	ALDH1B1	9	aldehyde dehydrogenase 1 family, member B1
+203180_at	ALDH1A3	15	aldehyde dehydrogenase 1 family, member A3
+205640_at	ALDH3B1	11	aldehyde dehydrogenase 3 family, member B1
+211004_s_at	ALDH3B1	11	aldehyde dehydrogenase 3 family, member B1
+204941_s_at	ALDH3B2	11	aldehyde dehydrogenase 3 family, member B2
+204942_s_at	ALDH3B2	11	aldehyde dehydrogenase 3 family, member B2
+201612_at	ALDH9A1	1	aldehyde dehydrogenase 9 family, member A1
+202053_s_at	ALDH3A2	17	aldehyde dehydrogenase 3 family, member A2
+202054_s_at	ALDH3A2	17	aldehyde dehydrogenase 3 family, member A2
+210544_s_at	ALDH3A2	17	aldehyde dehydrogenase 3 family, member A2
+200966_x_at	ALDOA	16	aldolase A, fructose-bisphosphate
+214687_x_at	ALDOA	16	aldolase A, fructose-bisphosphate
+204704_s_at	ALDOB	9	aldolase B, fructose-bisphosphate
+204705_x_at	ALDOB	9	aldolase B, fructose-bisphosphate
+211357_s_at	ALDOB	9	aldolase B, fructose-bisphosphate
+214423_x_at	ALDOB	9	aldolase B, fructose-bisphosphate
+214424_s_at	ALDOB	9	aldolase B, fructose-bisphosphate
+216600_x_at	ALDOB	9	aldolase B, fructose-bisphosphate
+217238_s_at	ALDOB	9	aldolase B, fructose-bisphosphate
+202022_at	ALDOC	17	aldolase C, fructose-bisphosphate
+208950_s_at	ALDH7A1	5	aldehyde dehydrogenase 7 family, member A1
+208951_at	ALDH7A1	5	aldehyde dehydrogenase 7 family, member A1
+213591_at	ALDH7A1	5	aldehyde dehydrogenase 7 family, member A1
+203502_at	BPGM	7	2,3-bisphosphoglycerate mutase
+211150_s_at	DLAT	11	dihydrolipoamide S-acetyltransferase
+212568_s_at	DLAT	11	dihydrolipoamide S-acetyltransferase
+213149_at	DLAT	11	dihydrolipoamide S-acetyltransferase
+209095_at	DLD	7	dihydrolipoamide dehydrogenase
+201231_s_at	ENO1	1	enolase 1, (alpha)
+216554_s_at	ENO1	1	enolase 1, (alpha)
+217294_s_at	ENO1	1	enolase 1, (alpha)
+201313_at	ENO2	12	enolase 2 (gamma, neuronal)
+204483_at	ENO3	17	enolase 3 (beta, muscle)
+209696_at	FBP1	9	fructose-1,6-bisphosphatase 1
+206952_at	G6PC	17	glucose-6-phosphatase, catalytic subunit
+217289_s_at	G6PC	17	glucose-6-phosphatase, catalytic subunit
+212581_x_at	GAPDH	12	glyceraldehyde-3-phosphate dehydrogenase
+213453_x_at	GAPDH	12	glyceraldehyde-3-phosphate dehydrogenase
+216575_at	GAPDH	12	glyceraldehyde-3-phosphate dehydrogenase
+217398_x_at	GAPDH	12	glyceraldehyde-3-phosphate dehydrogenase
+AFFX-HUMGAPDH/M33197_3_at	GAPDH	12	glyceraldehyde-3-phosphate dehydrogenase
+AFFX-HUMGAPDH/M33197_5_at	GAPDH	12	glyceraldehyde-3-phosphate dehydrogenase
+AFFX-HUMGAPDH/M33197_M_at	GAPDH	12	glyceraldehyde-3-phosphate dehydrogenase
+211167_s_at	GCK	7	glucokinase (hexokinase 4)
+208308_s_at	GPI	19	glucose phosphate isomerase
+210848_at	GPI	19	glucose phosphate isomerase
+200697_at	HK1	10	hexokinase 1
+202934_at	HK2	2	hexokinase 2
+222305_at	HK2	2	hexokinase 2
+205936_s_at	HK3	5	hexokinase 3 (white cell)
+200650_s_at	LDHA	11	lactate dehydrogenase A
+201030_x_at	LDHB	12	lactate dehydrogenase B
+213564_x_at	LDHB	12	lactate dehydrogenase B
+207022_s_at	LDHC	11	lactate dehydrogenase C
+200979_at	PDHA1	X	pyruvate dehydrogenase (lipoamide) alpha 1
+200980_s_at	PDHA1	X	pyruvate dehydrogenase (lipoamide) alpha 1
+214518_at	PDHA2	4	pyruvate dehydrogenase (lipoamide) alpha 2
+208911_s_at	PDHB	3	pyruvate dehydrogenase (lipoamide) beta
+211023_at	PDHB	3	pyruvate dehydrogenase (lipoamide) beta
+201102_s_at	PFKL	21	phosphofructokinase, liver
+211065_x_at	PFKL	21	phosphofructokinase, liver
+210976_s_at	PFKM	12	phosphofructokinase, muscle
+201037_at	PFKP	10	phosphofructokinase, platelet
+200886_s_at	PGAM1	10	phosphoglycerate mutase 1 (brain)
+205736_at	PGAM2	7	phosphoglycerate mutase 2 (muscle)
+200737_at	PGK1	X	phosphoglycerate kinase 1
+200738_s_at	PGK1	X	phosphoglycerate kinase 1
+217009_at	PGK1	X	phosphoglycerate kinase 1
+217356_s_at	PGK1	X	phosphoglycerate kinase 1
+217383_at	PGK1	X	phosphoglycerate kinase 1
+201968_s_at	PGM1	1	phosphoglucomutase 1
+210041_s_at	PGM3	6	phosphoglucomutase 3
+207858_s_at	PKLR	1	pyruvate kinase, liver and RBC
+210451_at	PKLR	1	pyruvate kinase, liver and RBC
+222078_at	PKLR	1	pyruvate kinase, liver and RBC
+201251_at	PKM2	15	pyruvate kinase, muscle
+200822_x_at	TPI1	12	triosephosphate isomerase 1
+210050_at	TPI1	12	triosephosphate isomerase 1
+213011_s_at	TPI1	12	triosephosphate isomerase 1
+206844_at	FBP2	9	fructose-1,6-bisphosphatase 2
+201900_s_at	AKR1A1	1	aldo-keto reductase family 1, member A1 (aldehyde reductase)
+221453_at	G6PC2	2	glucose-6-phosphatase, catalytic, 2
+210712_at	LDHAL6B	15	lactate dehydrogenase A-like 6B
